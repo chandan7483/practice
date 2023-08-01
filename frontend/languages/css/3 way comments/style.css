@@ -1,0 +1,12 @@
+h1{
+    font-size: larger;
+    color: blue;
+    background: local;
+    font-weight: bold;
+}
+p{
+    font-size: medium;
+    color: rgb(0, 255, 119);
+    background: local;
+    font-weight: 20px;  
+}
