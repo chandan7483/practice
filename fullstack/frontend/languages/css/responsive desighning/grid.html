@@ -6,36 +6,46 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>grid</h1>
+    <p>The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning.
+
+    </p>
     <style>
-        .item{
-         
-         background-color: red;
-         color: white;
-         margin: 20px;
-         font-size: 40px;
-         border: 2px solid black;
-        }
-        .container{
+        #container{
             display: grid;
-            /* grid-template-rows: 200px 200px 200px;
-            grid-template-columns: 200px 200px 200px 200px; */
-            /* grid-template-rows: repeat(3,200px);
-            grid-template-columns: repeat(2,200px) */
-            /* grid-template-rows: repeat(3,200px);
-            grid-template-columns: repeat(6,1fr) */
-            grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+          grid-template-columns: repeat(auto-fill,minmax(200px,2fr));
+          grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
             grid-template-rows: repeat(3,200px);
-           
+            border:4px solid red;
         }
-        </style>
-    <div class="container">
-        <div id="item-1" class="item">imk a box</div>
-        <div id="item-2" class="item">imk a box</div>
-        <div id="item-3" class="item">imk a box</div>
-        <div id="item-4" class="item">imk a box</div>
-        <div id="item-5" class="item">imk a box</div>
-        <div id="item-6" class="item">imk a box</div>
-    </div>
+        .itm{
+            font-size: 40px;
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+            margin: 80px;
+            
+        }
+    </style>
+
+
+
+
+
+
+<center> <div id="container">
+    <h1 id="chandan1" class="itm">hi</h1>
+    <h1 id="chandan2" class="itm">hello</h1>
+    <h1 id="chandan3" class="itm">how</h1>
+    <h1 id="chandan4" class="itm">are</h1>
+    <h1 id="chandan5" class="itm">you</h1>
+
+</div></center>
+
+
+
+   
+  
     
 </body>
 </html>
