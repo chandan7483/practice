@@ -1,3 +1,6 @@
+
+
+
 class movies{
     languages:Number
     story
@@ -18,3 +21,4 @@ class movies{
 let avatar=new movies()
 
 console.log(avatar)
+
