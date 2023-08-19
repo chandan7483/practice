@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <center>
+
+    <h1>number gessing</h1>
+    <p>math function is used to number generation and to perform  mathematical operation the math.floor will round up the decimal numbers and Math.random is used for random number generation.the inner.HTML is used to print onthe screeen not on the console</p>
+    <h1 id="number"></h1>
+    <button onclick="randomNumber()">random number</button>
+  </center>
+    <script>
+        let h1=document.getElementById('number')
+        function randomNumber(){
+            h1.innerHTML=Math.floor(Math.random()*6+1)
+        }
+    </script>
+
+
+</body>
+</html>
