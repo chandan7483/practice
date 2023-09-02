@@ -1,6 +1,5 @@
 import { Box, Paper, Toolbar } from "@mui/material"
 import { MyTabs } from "../../components/tabs/MyTabs.com"
-import React from "react"
 
 export const Lessons:React.FC<{}>=()=>{
     return <>

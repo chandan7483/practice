@@ -11,6 +11,8 @@ import { MyRatings } from '../ratting/MyRatings.com';
 import { MyAvtar } from '../avtar/MyAvtar.com';
 import { MyFragment } from '../fragment/MyFragment.com';
 import { MyUseStateHook } from '../hook/MyUseStateHook.com';
+
+
 export let MyTabs:React.FC<{}>=()=>{
   const [value, setValue] = React.useState('1');
 
@@ -29,8 +31,7 @@ console.log("newValue",typeof newValue)
             <Tab label="mui elemts" value="3" />
             <Tab label="fragment" value="4" />
             <Tab label="hookes" value="5" />
-            <Tab label="chandan" value="6" />
-
+            <Tab label="api" value="6" />
           </TabList>
         </Box>
         <TabPanel value="1"><MyProps/></TabPanel>
@@ -48,14 +49,10 @@ console.log("newValue",typeof newValue)
         <TabPanel value="5">
 <h1>hookes</h1>
 <MyUseStateHook/>
-        </TabPanel>
 
-        <TabPanel value='6'>
-          <h1>chandan</h1>
         </TabPanel>
-       
+        
       </TabContext>
-      
     </Box>
   );
 }
