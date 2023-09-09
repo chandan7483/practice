@@ -1,0 +1,50 @@
+<input type="number" id="num">
+<input type="number" id="num1">
+<button onclick="caller()">click me</button>
+<script>
+
+function doer(a,b,opration){
+        if(opration =="+"){
+   return a + b
+        }
+        if(opration =="-"){
+   return a - b
+        }
+        if(opration =="*"){
+   return a * b
+        }
+        if(opration =="/"){
+   return a / b
+        }
+     
+    }
+    function calculator(op,doer){
+        let data=document.getElementById('num').value
+        let data1=document.getElementById('num1').value
+        console.log(doer(parseInt(data) ,parseInt(data1) ,op))
+
+
+
+    }
+
+   
+
+
+    function caller( ){
+        calculator("/",doer)
+    }
+</script>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>dynamic calculater</h1>
+    <p>input is taken from the input key word and the printing is done by the button on click the 2 functions calculator and the doer are made the data from the user is of the type string we need to convert that string into integer to do so we use document.getElementByid('name of input').value and take as the input and calling the calulator funtion we print the output
+</html>
