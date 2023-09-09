@@ -11,6 +11,7 @@ import { MyRatings } from '../ratting/MyRatings.com';
 import { MyAvtar } from '../avtar/MyAvtar.com';
 import { MyFragment } from '../fragment/MyFragment.com';
 import { MyUseStateHook } from '../hook/MyUseStateHook.com';
+import { TwowaysofCss } from '../two ways of css/TwowayOfcss.com';
 
 
 export let MyTabs:React.FC<{}>=()=>{
@@ -32,6 +33,7 @@ console.log("newValue",typeof newValue)
             <Tab label="fragment" value="4" />
             <Tab label="hookes" value="5" />
             <Tab label="api" value="6" />
+            <Tab label="2ways of css" value="7" />
           </TabList>
         </Box>
         <TabPanel value="1"><MyProps/></TabPanel>
@@ -50,6 +52,9 @@ console.log("newValue",typeof newValue)
 <h1>hookes</h1>
 <MyUseStateHook/>
 
+        </TabPanel>
+        <TabPanel value="7">
+        <TwowaysofCss/>
         </TabPanel>
         
       </TabContext>

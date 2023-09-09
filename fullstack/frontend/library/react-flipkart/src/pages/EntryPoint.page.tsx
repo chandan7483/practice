@@ -14,7 +14,9 @@ export const Entrypoint:React.FC<{}>=()=>{
 >
     <Link to="/lessons/lesssons">
 <Button>lesons</Button></Link>
-            <Button>Projects</Button>
+<Link to='/project/login'>
+<Button>Projects</Button>
+</Link>
 </Grid>
 
             
