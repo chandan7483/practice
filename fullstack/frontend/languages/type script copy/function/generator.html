@@ -1,0 +1,43 @@
+
+<script>
+
+function* giftgiver(){
+    yield "gift 1"
+    yield "gift 2"
+    yield "gift 3"
+
+}
+
+let chandan=giftgiver()
+
+console.log("nishchay",chandan.next())
+console.log("nishchay",chandan.next())
+console.log("nishchay",chandan.next())
+console.log("nishchay",chandan.next())
+
+console.log("p 1",giftgiver().next())
+console.log("p 2",giftgiver().next())
+console.log("p 3",giftgiver().next())
+console.log("p 4",giftgiver().next())
+
+
+
+</script>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>generator function</h1>
+    <p>The GeneratorFunction object provides methods for generator functions. In JavaScript, every generator function is actually a GeneratorFunction object.
+
+        Note that GeneratorFunction is not a global object. It can be obtained with the following code:</p>
+        <br><p>const GeneratorFunction = function* () {}.constructor</p>
+</body>
+</html>
