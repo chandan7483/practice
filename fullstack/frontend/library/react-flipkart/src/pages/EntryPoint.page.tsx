@@ -20,7 +20,7 @@ export const Entrypoint:React.FC<{}>=()=>{
 </Grid>
 
             
-        </Paper>
+   </Paper>
     </Box>
     
     </>
