@@ -1,17 +1,21 @@
+
+
+
 import { Outlet } from "react-router-dom";
 import { MyProps } from "../pages/lessons/props/MyProps";
 import { H1 } from "../pages/lessons/elements/H1";
 import { Lessons } from "../pages/lessons/Lessons.page";
-import { Entrypoint} from "../pages/lessons/EntryPoint.page";
+import { Entrypoint } from "../pages/EntryPoint.page";
 
-export let MyEntryPoint={
+
+
+export let myEntryPointList={
     path:'/',
-
-    element:<><Outlet/></>,
-
-    children:[{ 
-        path:'entry',
-    element:<Entrypoint/>}
-       
+    element:<> <Outlet/></>,
+    children:[
+        {
+            path:'entry',
+            element:<Entrypoint/>
+        }
     ]
 }
