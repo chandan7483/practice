@@ -1,0 +1,13 @@
+
+
+<script>  
+ const numbers = [3,3,2,2,9,9,1,1]
+
+  const repeatedNumbers = numbers.reduce((acc, num) => {
+    if (numbers.indexOf(num) !== numbers.lastIndexOf(num) && !acc.includes(num)) {
+      acc.push(num);
+    }
+    return acc
+  }, [])
+  
+  console.log(repeatedNumbers);</script>
