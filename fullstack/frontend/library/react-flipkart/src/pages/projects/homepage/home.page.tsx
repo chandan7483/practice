@@ -6,6 +6,7 @@ import img from '../../../static/images/1.jpg'
 import img1 from '../../../static/images/2.jpg'
 import img2 from '../../../static/images/3.jpg'
 import { useEffect, useState } from "react"
+import 'bootstrap/dist/css/bootstrap.min.css';
 //import { flipkartApi } from "../../../service/flipkart.service"
 import { Flipcart } from "../../../service/flipcart.service"
 export const Home:React.FC<{}>=()=>{
