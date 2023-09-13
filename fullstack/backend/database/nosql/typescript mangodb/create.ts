@@ -1,8 +1,9 @@
 //import {MongoClient}from'mongodb'
-//let MyAddress='mongodb://127.0.0.1:27017'
-//let client=new MongoClient(MyAddress)
+let {MongoClient}=require('mongodb')
+let MyAddress='mongodb://127.0.0.1:27017'
+let client=new MongoClient(MyAddress)
 
-//let dbname='chandan'
+let dbname='chandan'
 //to run code ts-node filename.ts this will run the code without converting the ts file into js file
 async function main(){
 await client.connect()
