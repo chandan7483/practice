@@ -8,7 +8,7 @@ var con=mysql.createConnection({
 con.connect((err:any)=>{
     if(err)throw err;
     console.log('db connected')
-let query="CREATE TABLE student(name VARCHAR(255),chocalate VARCHAR(255),movie VARCHAR(255))"
+let query="CREATE TABLE student1(name VARCHAR(255),chocalate VARCHAR(255),movie VARCHAR(255))"
 con.query(query,(err:any,res:any)=>{
     if(err)throw err
     console.log("table created")
